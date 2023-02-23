@@ -48,6 +48,7 @@ class FormatButton extends StatelessWidget {
             child: child,
           )
         : InkWell(
+            excludeFromSemantics: true,
             borderRadius:
                 decoration.borderRadius?.resolve(Directionality.of(context)),
             onTap: () => onTap(_nextFormat()),
